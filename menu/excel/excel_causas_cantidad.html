@@ -1,0 +1,28 @@
+<!doctype html>
+<style>.ui-datepicker{cursor:pointer;}.ui-datepicker-calendar{display:none;}.ui-datepicker-current{display:none;}</style>
+
+<div class="d-flex justify-content-center">
+<div class="col-12 col-sm-8 col-md-5 col-lg-4 col-xl-3">
+<form id="formulario_buscar" class="needs-validation" method="post" novalidate autocomplete="off">
+<div class="card">
+
+<div class="card-body">
+
+<div class="input-group mb-3">
+<label for="fecha"><span class="input-group-text"><i class="bi bi-calendar-check" style="font-size:1.5rem;"></i></span></label>
+<input required type="text" id="fecha" name="fecha" class="form-control" minlength="1" maxlength="7" placeholder="MM/YYYY"/>
+<div class="invalid-tooltip"></div>
+</div>
+
+</div>
+
+<div class="card-footer text-center">
+<button type="submit" class="btn btn-lg btn-primary"><i id="icono_boton_buscar" class="bi bi-search"></i></button>
+</div>
+
+</div>
+</form>
+</div>
+</div>
+
+<script type="text/javascript" src="menu/excel/excel_causas_cantidad.js"></script>

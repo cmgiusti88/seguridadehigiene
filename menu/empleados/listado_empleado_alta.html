@@ -1,0 +1,100 @@
+<!doctype html>
+<form id="formulario_alta" class="needs-validation" method="post" novalidate autocomplete="off">
+<div id="ventana_formulario_alta" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
+<div class="modal-dialog modal-lg modal-dialog-scrollable">
+<div class="modal-content">
+<div class="modal-header bg-primary justify-content-center"><div class="modal-title text-white fs-4">AGREGAR EMPLEADO</div></div>
+
+<div class="modal-body bg-white">
+
+<div class="row g-1 mb-3">
+<div class="col">
+<label for="legajo_alta" class="form-label">LEGAJO</label>
+<div class="input-group">
+<input autofocus required type="number" id="legajo_alta" name="legajo_alta" class="form-control form-control-sm" placeholder="Escribir numero" minlength="1" maxlength="12"/>
+<div class="invalid-tooltip"></div>
+</div>
+</div>
+<div class="col">
+<label for="apellido_nombres_alta" class="form-label">APELLIDOS / NOMBRES</label>
+<div class="input-group">
+<input required type="text" id="apellido_nombres_alta" name="apellido_nombres_alta" class="form-control form-control-sm" minlength="2" placeholder="Escribir apellido y nombres" maxlength="50"/>
+<div class="invalid-tooltip"></div>
+</div>
+</div>
+</div>
+
+<div class="row g-1 mb-3">
+<div class="col">
+<div class="input-group">
+<div class="col-4">
+<select required id="id_tipodoc_alta" name="id_tipodoc_alta" class="form-select form-select-sm"></select>
+</div>
+<input required type="number" id="numdocumento_alta" name="numdocumento_alta" class="form-control form-control-sm" minlength="1" maxlength="12" placeholder="Escribir numero"/>
+<div class="invalid-tooltip"></div>
+</div>
+</div>
+<div class="col text-center">
+<label class="form-label">GENERO</label>
+<div class="form-check form-check-inline">
+<input required type="radio" id="masculino" name="eligir_m_o_f_alta" class="btn-check" value="M"/>
+<label class="btn btn-outline-secondary" for="masculino">MASCULINO</label>
+<div class="invalid-tooltip"></div>
+</div>
+<div class="form-check form-check-inline">
+<input required type="radio" id="femenino" name="eligir_m_o_f_alta" class="btn-check" value="F"/>
+<label class="btn btn-outline-secondary" for="femenino">FEMENINO</label>
+<div class="invalid-tooltip"></div>
+</div>
+</div>
+</div>
+
+<div class="row g-1 mb-3">
+<div class="col">
+<label for="fechanac_alta" class="form-label">FECHA DE NACIMIENTO</label>
+<input type="hidden" id="fechanac_formato_alta" name="fechanac_formato_alta"/>
+<div class="input-group">
+<input required type="text" id="fechanac_alta" name="fechanac_alta" class="form-control form-control-sm" minlength="1" maxlength="10" placeholder="DD/MM/YYYY"/>
+<div class="invalid-tooltip"></div>
+</div>
+</div>
+<div class="col">
+<label for="fechaalta_alta" class="form-label">FECHA ALTA</label>
+<input type="hidden" id="fechaalta_formato_alta" name="fechaalta_formato_alta"/>
+<div class="input-group">
+<input required type="text" id="fechaalta_alta" name="fechaalta_alta" class="form-control form-control-sm" minlength="1" maxlength="10" placeholder="DD/MM/YYYY"/>
+<div class="invalid-tooltip"></div>
+</div>
+</div>
+</div>
+
+<div class="row g-1 mb-3">
+<div class="col">
+<label for="id_ccosto_alta" class="form-label">OFICINA</label>
+<div class="input-group">
+<select required id="id_ccosto_alta" name="id_ccosto_alta" class="form-select form-select-sm"><option selected disabled value="">Seleccionar una oficina</option></select>
+<div class="invalid-tooltip"></div>
+</div>
+</div>
+<div class="col">
+<label for="id_funcion_alta" class="form-label">FUNCIÓN</label>
+<div class="input-group">
+<select required id="id_funcion_alta" name="id_funcion_alta" class="form-select form-select-sm"><option disabled selected value="">Seleccionar una función</option></select>
+<div class="invalid-tooltip"></div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="modal-footer justify-content-center bg-light">
+<button type="button" class="btn btn-lg btn-danger" data-bs-dismiss="modal" title="Cancelar"><i class="bi bi-x"></i></button>
+<button type="submit" class="btn btn-lg btn-success" title="Aceptar"><i class="bi bi-check"></i></button>
+</div>
+
+</div>
+</div>
+</div>
+</form>
+
+<script type="text/javascript" src="menu/empleados/listado_empleado_alta.js"></script>

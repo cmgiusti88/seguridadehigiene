@@ -1,0 +1,26 @@
+<!doctype html>
+<div class="d-flex justify-content-center">
+<div class="col-12 col-sm-8 col-md-5 col-lg-4 col-xl-3">
+<form id="formulario_alta" action="menu/enfermedades/enfermedades_causa_agregar.php" class="needs-validation" method="post" novalidate autocomplete="off">
+<div class="card">
+
+<div class="card-body">
+
+<label for="descripcion_causa" class="form-label">CAUSA</label>
+<div class="input-group">
+<input autofocus required type="text" id="descripcion_causa" name="descripcion_causa" minlength="1" maxlength="100" class="form-control form-control-sm text-uppercase" placeholder="Escribir descripcion"/>
+<div class="invalid-tooltip"></div>
+</div>
+
+</div>
+
+<div class="card-footer text-center">
+<button type="submit" class="btn btn-lg btn-success" title="Aceptar"><i id="icono_boton_aceptar" class="bi bi-check"></i></button>
+</div>
+
+</div>
+</form>
+</div>
+</div>
+
+<script type="text/javascript" src="menu/enfermedades/enfermedades_causa_agregar.js"></script>

@@ -1,0 +1,31 @@
+<!doctype html>
+<form id="formulario_eliminar"  class="needs-validation" method="post" novalidate autocomplete="off">
+<div id="ventana_formulario_eliminar" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
+<div class="modal-dialog modal-sm modal-dialog-centered">
+<div class="modal-content">
+
+<div class="modal-body bg-white">
+
+<input required type="hidden" id="legajo_eliminar" name="legajo_eliminar"/>
+
+<label for="fecha_baja_eliminar" class="form-label">FECHA BAJA</label>
+<input type="hidden" id="fecha_baja_formato_eliminar" name="fecha_baja_formato_eliminar"/>
+<div class="input-group">
+<input required type="text" id="fecha_baja_eliminar" name="fecha_baja_eliminar" class="form-control form-control-sm" minlength="1" maxlength="10" placeholder="DD/MM/YYYY"/>
+<div class="invalid-tooltip"></div>
+</div>
+
+</div>
+
+<div class="modal-footer justify-content-center bg-light">
+<button type="button" class="btn btn-lg btn-danger" data-bs-dismiss="modal" title="Cancelar"><i class="bi bi-x"></i></button>
+<button type="submit" class="btn btn-lg btn-success" title="Aceptar"><i class="bi bi-check"></i></button>
+</div>
+
+</div>
+</div>
+</div>
+</form>
+
+<script type="text/javascript" src="menu/empleados/listado_empleado_eliminar.js"></script>
+

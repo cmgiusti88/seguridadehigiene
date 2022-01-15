@@ -1,0 +1,71 @@
+<!doctype html>
+<div class="d-flex justify-content-center">
+<div class="col-12 col-sm-10 col-md-6 col-lg-5 col-xl-4">
+<form id="formulario_buscar" method="post" autocomplete="off">
+<div class="card">
+
+<div class="card-body">
+
+<div class="input-group">
+<label class="col-form-label" for="legajo">Legajo</label>
+<input required type="text" id="legajo" name="legajo" class="form-control" placeholder="Escribir numero" minlength="1" maxlength="12"/>
+<div id="mensaje_error"></div>
+</div>
+<small id="mensaje_tutorial" class="form-text text-muted">También puede escribir minimo dos letras del empleado</small>
+<input type="hidden" id="id_ccosto" name="id_ccosto" maxlength="12"/><input type="hidden" id="id_funcion" name="id_funcion" maxlength="12"/><input type="hidden" id="fecha_baja" name="fecha_baja" maxlength="12"/>
+
+</div>
+
+</div>
+</form>
+</div>
+</div>
+
+<div hidden id="mostrar_tabla" class="card">
+<table id="tabla" class="table table-sm table-hover table-bordered" style="width:100%">
+<thead class="table-secondary">
+<tr>
+<th data-orderable="false">Apellido y nombre</th>
+<th data-orderable="false">Documento</th>
+<th data-orderable="false">Nacimiento</th>
+<th data-orderable="false">Genero</th>
+<th data-orderable="false">Oficina</th>
+<th data-orderable="false">Funcion</th>
+<th data-orderable="false">Fecha alta</th>
+<th data-orderable="false">Fecha baja</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<table id="tabla1" class="table table-sm table-hover table-bordered" style="width:100%">
+<thead class="table-secondary">
+<tr>
+<th hidden>Id_codigo_novedad</th>
+<th hidden>Legajo</th>
+<th hidden>Apellido Nombre</th>
+<th hidden>Id_costo</th>
+<th hidden>Oficina</th>
+<th hidden>Id_funcion</th>
+<th hidden>Funcion</th>
+<th hidden>Fecha Baja</th>
+<th>Fecha desde</th>
+<th hidden>Fecha_desde_formato</th>
+<th>Fecha hasta</th>
+<th hidden>Fecha_hasta_formato</th>
+<th hidden>Id_Causa</th>
+<th data-orderable="false">Causa</th>
+<th hidden>Id_Diagnostico</th>
+<th data-orderable="false">Diagnostico</th>
+<th data-orderable="false">Cantidad dias</th>
+<th>Fecha novedad</th>
+<th data-orderable="false">Medico o domicilio</th>
+<th data-orderable="false">Articulo</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+
+<script type="text/javascript" src="menu/novedades/listado_novedad.js"></script>

@@ -1,0 +1,71 @@
+﻿<!doctype html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=edge"/><![endif]-->
+    <meta name="description" content="Higiene y Seguridad - OSECAC">
+    <title>Higiene y Seguridad - OSECAC</title>
+    <link rel="shortcut icon" href="img/osecac.ico">
+    <link rel="preload" href="css/fonts/bootstrap-icons.woff2?231ce25e89ab5804f9a6c427b8d325c9" as="font"
+        type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/bootstrap.min.css?v5.1.0">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/seguridadyhigiene.css">
+</head>
+
+<body class="body-index user-select-none bg-light">
+
+    <div id="ventanas_boostrap"></div>
+
+    <header class="navbar fixed-top"></header>
+
+    <div class="d-flex justify-content-center">
+        <div class="col-12 col-sm-8 col-md-5 col-lg-4 col-xl-3">
+            <form id="formulario_acceso" action="json/acceso.php" class="needs-validation" method="post" novalidate
+                autocomplete="off">
+                <div class="card">
+
+                    <div class="card-header text-center fs-4">Acceso al sistema</div>
+
+                    <div class="card-body">
+
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="usuario"><i class="bi bi-person fs-4"></i></label>
+                            <input autofocus required type="text" class="form-control" id="usuario" name="usuario"
+                                placeholder="Escribir usuario" minlength="1" maxlength="25" autocomplete="username">
+                            <div class="invalid-tooltip">Ingrese usuario</div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="contrasena"><i class="bi bi-key fs-4"></i></label>
+                            <input required type="password" class="form-control" id="contrasena" name="contrasena"
+                                placeholder="Escribir contraseña" minlength="1" maxlength="15"
+                                autocomplete="current-password">
+                            <div class="invalid-tooltip">Ingrese contraseña</div>
+                        </div>
+
+                        <div id="mensaje_error"></div>
+
+                    </div>
+
+                    <div class="card-footer text-center">
+                        <button type="submit" class="btn btn-primary w-100" title="Ingresar al sistema"><i
+                                id="icono_boton_ingresar" class="bi bi-arrow-right-square fs-4"></i></button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="fixed-bottom card bg-light"></footer>
+
+    <script src="js/jquery.min.js?v3.6.0"></script>
+    <script src="js/bootstrap.min.js?v5.1.0"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

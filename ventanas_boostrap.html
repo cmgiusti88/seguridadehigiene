@@ -1,0 +1,45 @@
+<!doctype html>
+<div id="ventana_cargando" class="modal" data-bs-backdrop="static" data-bs-keyboard="false">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-body text-center">
+<div class="spinner-grow text-primary" role="status">
+<span class="visually-hidden">Cargando...</span>
+</div>
+</div>
+</div>
+</div>
+
+<div id="ventana_confirmacion" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
+<div class="modal-dialog modal-sm modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header bg-primary justify-content-center"><div class="modal-title text-white fs-4">CONFIRMAR</div></div>
+<div class="modal-body bg-white" id="ventana_confirmacion-modal-body"></div>
+<div class="modal-footer bg-light">
+<button type="submit" class="btn btn-lg btn-success" id="ventana_confirmacion-boton-si" title="Aceptar"><i class="bi bi-check"></i></button>
+<button type="button" class="btn btn-lg btn-danger" data-bs-dismiss="modal" id="ventana_confirmacion-boton-no" title="Cancelar"><i class="bi bi-x"></i></button>
+</div>
+</div>
+</div>
+</div>
+
+<div id="ventana_error" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false"> 
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header bg-danger justify-content-center"><div class="modal-title text-white fs-4"><i class="bi bi-exclamation-octagon"></i> OCURRIO UN PROBLEMA</div></div>
+<div class="modal-body bg-white" id="ventana_error-modal-body"></div>
+<div class="modal-footer bg-light"><button type="button" class="btn btn-lg btn-danger" data-bs-dismiss="modal" title="Cerrar"><i class="bi bi-x-circle"></i></button></div>
+</div>
+</div>
+</div>
+
+<div id="ventana_error1" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false"> 
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-body alert alert-danger text-center" id="ventana_error1-modal-body"></div>
+</div>
+</div>
+
+<div id="ventana_exito" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-body alert alert-success text-center" id="ventana_exito-modal-body"></div>
+</div>
+</div>

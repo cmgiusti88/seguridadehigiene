@@ -1,0 +1,106 @@
+<!doctype html>
+<form id="formulario_alta" class="needs-validation" method="post" novalidate autocomplete="off">
+<div id="ventana_formulario_alta" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
+<div class="modal-dialog modal-lg modal-dialog-scrollable">
+<div class="modal-content">
+<div class="modal-header bg-primary justify-content-center"><div class="modal-title text-white fs-4">AGREGAR NOVEDAD</div></div>
+
+<div class="modal-body bg-white">
+
+<input required type="hidden" id="id_ccosto_alta" name="id_ccosto_alta"/>
+<input required type="hidden" id="id_funcion_alta" name="id_funcion_alta"/>
+
+<div class="row g-1 mb-3">
+<div class="col">
+<label for="legajo_alta" class="form-label">LEGAJO</label>
+<input autofocus required readonly type="number" id="legajo_alta" name="legajo_alta" class="form-control form-control-sm" minlength="1" maxlength="12"/>
+</div>
+<div class="col">
+<label for="fecha_novedad_alta" class="form-label">FECHA NOVEDAD</label>
+<input type="hidden" id="fecha_novedad_formato_alta" name="fecha_novedad_formato_alta"/>
+<div class="input-group">
+<input required type="text" id="fecha_novedad_alta" name="fecha_novedad_alta" class="form-control form-control-sm" minlength="1" maxlength="10" placeholder="DD/MM/YYYY"/>
+<div class="invalid-tooltip"></div>
+</div>
+</div>
+</div>
+
+<div class="row g-1 mb-3">
+<div class="col text-center">
+<label class="form-label">SERVICIO</label>
+<div class="form-check form-check-inline">
+<input required type="radio" id="servicio_medico" name="eligir_servicio_alta" class="btn-check" value="SM"/>
+<label class="btn btn-outline-secondary" for="servicio_medico">MEDICO</label>
+<div class="invalid-tooltip"></div>
+</div>
+<div class="form-check form-check-inline">
+<input required type="radio" id="servicio_domicilio" name="eligir_servicio_alta" class="btn-check" value="SD"/>
+<label class="btn btn-outline-secondary" for="servicio_domicilio">DOMICILIO</label>
+<div class="invalid-tooltip"></div>
+</div>
+</div>
+<div class="col text-center">
+<label class="form-label">ART</label>
+<div class="form-check form-check-inline">
+<input required type="radio" id="art_si" name="eligir_articulo_alta" class="btn-check" value="SI"/>
+<label class="btn btn-outline-secondary" for="art_si">SI</label>
+<div class="invalid-tooltip"></div>
+</div>
+<div class="form-check form-check-inline">
+<input required type="radio" id="art_no" name="eligir_articulo_alta" class="btn-check" value="NO"/>
+<label class="btn btn-outline-secondary" for="art_no">NO</label>
+<div class="invalid-tooltip"></div>
+</div>
+</div>
+</div>
+
+<div class="row g-1 mb-3">
+<div class="col">
+<label for="id_causa_alta" class="form-label">CAUSA</label>
+<div class="input-group">
+<select role="button" required id="id_causa_alta" name="id_causa_alta" class="form-select form-select-sm"><option disabled selected value="">Seleccionar una causa</option></select>
+<div class="invalid-tooltip"></div>
+</div>
+</div>
+<div class="col">
+<label for="id_diagnostico_alta" class="form-label">DIAGNOSTICO</label>
+<div class="input-group">
+<select required id="id_diagnostico_alta" name="id_diagnostico_alta" class="form-select form-select-sm"><option disabled selected value="">Primero seleccionar una causa</option></select>
+<div class="invalid-tooltip"></div>
+</div>
+</div>
+</div>
+
+<div class="row g-1 mb-3">
+<div class="col">
+<label for="fecha_desde_alta" class="form-label">FECHA DESDE</label>
+<input type="hidden" id="fecha_desde_formato_alta" name="fecha_desde_formato_alta"/>
+<div class="input-group">
+<input required type="text" id="fecha_desde_alta" name="fecha_desde_alta" class="form-control form-control-sm"  minlength="1" maxlength="10" placeholder="DD/MM/YYYY"/>
+<div class="invalid-tooltip"></div>
+</div>
+</div>
+<div class="col">
+<label for="fecha_hasta_alta" class="form-label">FECHA HASTA</label>
+<input type="hidden" id="fecha_hasta_formato_alta" name="fecha_hasta_formato_alta"/>
+<div class="input-group">
+<input required disabled type="text" id="fecha_hasta_alta" name="fecha_hasta_alta" class="form-control form-control-sm"  minlength="1" maxlength="10" placeholder="Primero seleccionar FECHA DESDE"/>
+<div class="invalid-tooltip"></div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="modal-footer justify-content-center bg-light">
+<button type="button" class="btn btn-lg btn-danger" data-bs-dismiss="modal" title="Cancelar"><i class="bi bi-x"></i></button>
+<button type="submit" class="btn btn-lg btn-success" title="Aceptar"><i class="bi bi-check"></i></button>
+</div>
+
+
+</div>
+</div>
+</div>
+</form>
+
+<script type="text/javascript" src="menu/novedades/listado_novedad_alta.js"></script>

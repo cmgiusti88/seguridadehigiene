@@ -1,0 +1,21 @@
+<!doctype html>
+<div class="container-fluid text-white">
+<div class="navbar-brand fs-2 ms-1">Higiene y Seguridad</div>
+<div class="me-2 text-center">
+<span id="oficina_usuario_ingresar"></span>
+<div class="mb1"></div>
+<span id="nombre_usuario_ingresar"></span>
+</div>
+</div>
+<script>
+if(sessionStorage.usuario_ingresar === undefined)
+{
+  $('#nombre_usuario_ingresar').html('');
+  $('#oficina_usuario_ingresar').html('');
+}
+else
+{
+  $('#nombre_usuario_ingresar').html(sessionStorage.nombre_usuario_ingresar);
+  $('#oficina_usuario_ingresar').html(sessionStorage.oficina_usuario_ingresar);
+}
+</script>

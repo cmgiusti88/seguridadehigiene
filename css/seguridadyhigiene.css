@@ -1,0 +1,269 @@
+@font-face
+{
+  font-display:swap;
+}
+body
+{
+  margin-top:99px;
+  margin-bottom:8%;
+}
+.body-index
+{
+  margin-top:105px;
+}
+header
+{
+  height:100px;
+  background-color:#377CB5;
+}
+footer
+{
+  height:50px;
+}
+select option:disabled
+{
+  color:white;
+  background-color:black;
+}
+input[type=number]::-webkit-outer-spin-button,input[type=number]::-webkit-inner-spin-button
+{
+  -webkit-appearance:none;
+  margin:0;
+}
+input[type=number]
+{
+  -moz-appearance:textfield;
+}
+/****BOOTSTRAP 5****/
+.btn
+{
+  padding:0px 5px 0px 5px;
+}
+.input-group-text
+{
+  padding:0px 5px 0px 5px;
+  cursor:pointer;
+}
+.col-form-label
+{
+ width:120px;
+ text-align:center;
+ font-weight:bold;
+ background-color:#e9ecef;
+ border:1px solid #ced4da;
+ padding:5px 0px 5px 0px;
+ cursor:pointer;
+}
+.form-label
+{
+  font-weight:bold;
+  width:100%;
+  text-align:center;
+  margin:0;
+  background-color:#e9ecef;
+  cursor:pointer;
+}
+.invalid-tooltip
+{
+  position:relative;
+  width:100%;
+}
+.was-validated :valid
+{
+  border-color:#DDDDDD !important;
+  background-image:inherit !important;
+  box-shadow:inherit !important;
+}
+.form-control:hover
+{
+  background-color:cornsilk;
+}
+.form-control:focus
+{
+  background-color:antiquewhite;
+}
+.spinner-grow
+{
+  width:5rem;
+  height:5rem;
+}
+/****JQUERY UI AUTOCOMPLETAR****/
+.ui-autocomplete
+{
+  font-size:16px;
+  max-height:170px;
+  overflow-x:hidden;
+  z-index:9999 !important;
+}
+.ui-autocomplete-loading
+{  
+  background-size:24px 24px;
+  background-image:url("images/indicator.gif");
+  background-repeat:no-repeat;
+  background-position:right center;
+}
+.ui-autocomplete li
+{
+  background-color:floralwhite;
+}
+.ui-widget-content .ui-state-active
+{
+  color:#000000;
+}
+/****JQUERY UI DATEPICKER****/
+.ui-datepicker
+{
+ z-index:9999 !important;
+}
+.ui-datepicker-prev, .ui-datepicker-next
+{
+  cursor:pointer;
+}
+.ui-datepicker th
+{
+  cursor:default;
+}
+/****DATATABLE****/
+table.dataTable
+{
+ font-size:13px;
+}
+table.dataTable thead th
+{
+  text-align:center;
+  cursor:default;
+}
+table.dataTable tbody th,
+table.dataTable tbody td 
+{
+  cursor:pointer;
+  word-wrap:break-word;
+  max-width:120px;
+}
+table.dataTable tfoot
+{
+  display:table-header-group;
+}
+div.dataTables_length
+{
+ float:right;
+}
+.boton_alta_tabla:enabled
+{
+  background-color:darkgreen;
+}
+.boton_alta_tabla:hover
+{
+  background-color:lightgreen;
+}
+.boton_modificar_tabla:enabled
+{
+  background-color:cadetblue;
+}
+.boton_modificar_tabla:hover:enabled
+{
+  background-color:turquoise;
+}
+.boton_eliminar_tabla:enabled
+{
+  background-color:darkred;
+}
+.boton_eliminar_tabla:hover:enabled
+{
+  background-color:red;
+}
+/****nav_general menu*****/
+.contenido
+{
+  padding-left:151px;
+}
+.sidebar
+{
+  background-color:rgba(103,103,103,1); 
+  width:150px;
+  min-height:calc(100% - 149px);
+  max-height:calc(100% - 149px);
+  height:100%;
+  position:fixed;
+}
+.nav_general 
+{
+  max-height:calc(100% - 38px);
+  height:calc(100% - 38px);
+  overflow-y:auto;
+}
+.nav_general .nav_cuerpo .nav-item a 
+{
+  font-size:13px;
+  display:inline-block;
+  width:100%;
+  text-decoration:none;
+  color:#f1f1f1;
+  border-bottom:1px solid #7A7A7A;
+  padding:10px 3px 10px 3px;
+}
+.nav_general .nav_cuerpo .nav-item:hover>a
+{
+  font-weight:bold;
+  color:cornsilk;
+  background-color:#555;
+}
+.nav_general .nav_cuerpo .nav-item.active > a::after
+{
+  color:red;
+  transform:rotate(180deg);
+}
+.nav_general .nav_cuerpo .nav-item .dropdown-toggle::after
+{
+  font-size:20px;
+  color:darkseagreen;
+  float:right;
+  margin:10px 5px;
+}
+.nav_general .nav_cuerpo .nav-item .dropdown-menu
+{
+  font-size:12px;
+  min-width:100%;
+}
+.nav_general .nav_cuerpo .nav-item .dropdown-menu > a:hover
+{
+  font-weight:bold;
+  color:cornsilk;
+  background-color:#555;
+}
+.nav_pie
+{
+  font-size:14px;
+  color:white;
+  position:absolute;
+  width:100%;
+  bottom:0;
+  display:flex;
+  background:#3a3f48;
+  box-shadow:0px -5px 5px #282c33;
+  border-top:1px solid #464a52;
+}
+.nav_pie > a
+{
+  flex-grow:1;
+  text-align:center;
+  height:30px;
+  line-height:30px;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;
+}
+#cerrar_sesion:hover
+{
+  color:red;
+  font-weight:bold;
+  cursor:pointer;
+}
+/****************************/
+@media(max-width:767.98px)
+{
+  .dataTables_paginate ul.pagination .paginate_button:not(.previous):not(.next)
+  {
+    display:none;
+  }
+}

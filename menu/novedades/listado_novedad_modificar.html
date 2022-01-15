@@ -1,0 +1,110 @@
+<!doctype html>
+<form id="formulario_modificar" class="needs-validation" method="post" novalidate autocomplete="off">
+<div id="ventana_formulario_modificar" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
+<div class="modal-dialog modal-lg modal-dialog-scrollable">
+<div class="modal-content">
+<div class="modal-header bg-primary justify-content-center"><div class="modal-title text-white fs-4">MODIFICAR NOVEDAD</div></div>
+
+<div class="modal-body bg-white">
+
+<input required type="hidden" id="id_codigo_novedad_modificar" name="id_codigo_novedad_modificar"/>
+
+<div class="row g-1 mb-3">
+<div class="col">
+<label for="legajo_modificar" class="form-label">LEGAJO</label>
+<input autofocus readonly required type="number" id="legajo_modificar" name="legajo_modificar" class="form-control form-control-sm"  minlength="1" maxlength="12"/>
+</div>
+<div class="col">
+<label for="fecha_novedad_modificar" class="form-label">FECHA NOVEDAD</label>
+<input required readonly type="text" id="fecha_novedad_modificar" name="fecha_novedad_modificar" class="form-control form-control-sm" minlength="1" maxlength="10" placeholder="DD/MM/YYYY"/>
+</div>
+</div>
+
+<div class="row g-1 mb-3">
+<div class="col">
+<label for="descripcion_ccosto_modificar" class="form-label">LUGAR</label>
+<input required readonly type="hidden" id="id_ccosto_actual_modificar" name="id_ccosto_actual_modificar" class="form-control form-control-sm" minlength="1" maxlength="12"/>
+<input required readonly type="text" id="descripcion_ccosto_modificar" name="descripcion_ccosto_modificar" class="form-control form-control-sm"/>
+</div>
+<div class="col">
+<label for="descripcion_funcion_modificar" class="form-label">FUNCION</label>
+<input required readonly type="hidden" id="id_funcion_actual_modificar" name="id_funcion_actual_modificar" class="form-control form-control-sm" minlength="1" maxlength="12"/>
+<input required readonly type="text" id="descripcion_funcion_modificar" name="descripcion_funcion_modificar" class="form-control form-control-sm"/>
+</div>
+</div>
+
+<div class="row g-1 mb-3">
+<div class="col text-center">
+<input type="hidden" name="medico_o_domicilio_modificar" id="medico_o_domicilio_modificar"/>
+<label class="form-label">SERVICIO</label>
+<div class="form-check form-check-inline">
+<input required type="radio" id="servicio_medico" name="eligir_sm_o_sd_modificar" class="btn-check" value="SM"/>
+<label class="btn btn-outline-secondary" for="servicio_medico">MEDICO</label>
+</div>
+<div class="form-check form-check-inline">
+<input required type="radio" id="servicio_domicilio" name="eligir_sm_o_sd_modificar" class="btn-check" value="SD"/>
+<label class="btn btn-outline-secondary" for="servicio_domicilio">DOMICILIO</label>
+</div>
+</div>
+<div class="col text-center">
+<input type="hidden" name="articulo_modificar" id="articulo_modificar"/>
+<label class="form-label">ART</label>
+<div class="form-check form-check-inline">
+<input required type="radio" id="art_si" name="eligir_articulo_modificar" class="btn-check" value="SI"/>
+<label class="btn btn-outline-secondary" for="art_si">SI</label>
+</div>
+<div class="form-check form-check-inline">
+<input required type="radio" id="art_no" name="eligir_articulo_modificar" class="btn-check" value="NO"/>
+<label class="btn btn-outline-secondary" for="art_no">NO</label>
+</div>
+</div>
+</div>
+
+<div class="row g-1 mb-3">
+<div class="col">
+<label for="id_causa_modificar" class="form-label">CAUSA</label>
+<input required type="hidden" id="id_causa_anterior" name="id_causa_anterior"/>
+<div class="input-group">
+<select required id="id_causa_modificar" name="id_causa_modificar" class="form-select form-select-sm"></select>
+</div>
+</div>
+<div class="col">
+<label for="id_diagnostico_modificar" class="form-label">DIAGNOSTICO</label>
+<input required type="hidden" id="id_diagnostico_anterior" name="id_diagnostico_anterior"/>
+<div class="input-group">
+<select required id="id_diagnostico_modificar" name="id_diagnostico_modificar" class="form-select form-select-sm"></select>
+<div class="invalid-tooltip"></div>
+</div>
+</div>
+</div>
+
+<div class="row g-1 mb-3">
+<div class="col">
+<label for="fecha_desde_modificar" class="form-label">FECHA DESDE</label>
+<input required type="hidden" id="fecha_desde_formato_modificar" name="fecha_desde_formato_modificar"/>
+<div class="input-group">
+<input required type="text" id="fecha_desde_modificar" name="fecha_desde_modificar" class="form-control form-control-sm" minlength="1" maxlength="10"/>
+</div>
+</div>
+<div class="col">
+<label for="fecha_hasta_modificar" class="form-label">FECHA HASTA</label>
+<input required type="hidden" id="fecha_hasta_formato_modificar" name="fecha_hasta_formato_modificar"/>
+<div class="input-group">
+<input required type="text" id="fecha_hasta_modificar" name="fecha_hasta_modificar" class="form-control form-control-sm" minlength="1" maxlength="10"/>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="modal-footer justify-content-center bg-light">
+<button type="button" class="btn btn-lg btn-danger" data-bs-dismiss="modal" title="Cancelar"><i class="bi bi-x"></i></button>
+<button type="submit" class="btn btn-lg btn-success" title="Aceptar"><i class="bi bi-check"></i></button>
+</div>
+
+</div>
+</div>
+</div>
+</form>
+
+<script type="text/javascript" src="menu/novedades/listado_novedad_modificar.js"></script>

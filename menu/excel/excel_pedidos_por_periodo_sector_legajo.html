@@ -1,0 +1,32 @@
+<!doctype html>
+<div class="d-flex justify-content-center">
+<div class="col-12 col-sm-8 col-md-5 col-lg-4 col-xl-3">
+<form id="formulario_buscar" class="needs-validation" method="post" novalidate autocomplete="off">
+<div class="card">
+
+<div class="card-body">
+
+<div class="input-group mb-3">
+<label for="fecha_desde" class="col-form-label">Fecha desde</label>
+<input required type="text" id="fecha_desde" name="fecha_desde" class="form-control" minlength="1" maxlength="10" placeholder="DD/MM/YYYY"/>
+<div class="invalid-tooltip"></div>
+</div>
+
+<div class="input-group mb-3">
+<label for="fecha_hasta" class="col-form-label">Fecha hasta</label>
+<input required disabled type="text" id="fecha_hasta" name="fecha_hasta" class="form-control" minlength="1" maxlength="10" placeholder="DD/MM/YYYY"/>
+<div class="invalid-tooltip"></div>
+</div>
+
+</div>
+
+<div class="card-footer text-center">
+<button type="submit" class="btn btn-lg btn-primary"><i id="icono_boton_buscar" class="bi bi-search"></i></button>
+</div>
+
+</div>
+</form>
+</div>
+</div>
+
+<script type="text/javascript" src="menu/excel/excel_pedidos_por_periodo_sector_legajo.js"></script>

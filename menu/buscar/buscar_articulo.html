@@ -1,0 +1,70 @@
+<!doctype html>
+<div class="d-flex justify-content-center">
+<div class="col-12 col-sm-8 col-md-5 col-lg-4 col-xl-3">
+<form id="formulario_buscar" class="needs-validation" method="post" novalidate autocomplete="off">
+<div class="card">
+
+<div class="card-body">
+
+<div class="row g-1 mb-3">
+<div class="col">
+<label for="fecha_desde" class="form-label">Fecha desde</label>
+<input type="hidden" id="fecha_desde_formato" name="fecha_desde_formato"/>
+<div class="input-group">
+<input required type="text" id="fecha_desde" name="fecha_desde" class="form-control form-control-sm" minlength="1" maxlength="10" placeholder="DD/MM/YYYY"/>
+<div class="invalid-tooltip"></div>
+</div>
+</div>
+<div class="col">
+<label for="fecha_hasta" class="form-label">Fecha hasta</label>
+<input type="hidden" id="fecha_hasta_formato" name="fecha_hasta_formato"/>
+<div class="input-group">
+<input required disabled type="text" id="fecha_hasta" name="fecha_hasta" class="form-control form-control-sm" minlength="1" maxlength="10" placeholder="DD/MM/YYYY"/>
+<div class="invalid-tooltip"></div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="card-footer text-center">
+<button type="submit" class="btn btn-lg btn-primary"><i id="icono_boton_buscar" class="bi bi-search"></i></button>
+</div>
+</div>
+
+</form>
+</div>
+</div>
+
+<div hidden id="mostrar_tabla" class="card">
+<table id="tabla" class="table table-sm table-hover table-bordered" style="width:100%">
+<thead class="table-secondary">
+<tr>
+<th hidden>Id_codigo_novedad</th>
+<th>Legajo</th>
+<th>Apellido Nombre</th>
+<th hidden>Id_costo</th>
+<th>Oficina</th>
+<th hidden>Id_funcion</th>
+<th>Funcion</th>
+<th>Fecha Baja</th>
+<th>Fecha desde</th>
+<th hidden>Fecha_desde_formato</th>
+<th>Fecha hasta</th>
+<th hidden>Fecha_hasta_formato</th>
+<th hidden>Id_Causa</th>
+<th data-orderable="false">Causa</th>
+<th hidden>Id_Diagnostico</th>
+<th data-orderable="false">Diagnostico</th>
+<th data-orderable="false">Cantidad dias</th>
+<th data-orderable="false">Fecha novedad</th>
+<th data-orderable="false">Medico o domicilio</th>
+<th data-orderable="false">Articulo</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+
+<script type="text/javascript" src="menu/buscar/buscar_articulo.js"></script>

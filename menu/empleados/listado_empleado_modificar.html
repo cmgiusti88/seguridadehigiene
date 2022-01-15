@@ -1,0 +1,42 @@
+<!doctype html>
+<form id="formulario_modificar" class="needs-validation" method="post" novalidate autocomplete="off">
+<div id="ventana_formulario_modificar" class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-header bg-primary justify-content-center"><div class="modal-title text-white fs-4">MODIFICAR EMPLEADO</div></div>
+
+<div class="modal-body bg-white">
+
+<input required hidden id="legajo_modificar" name="legajo_modificar"/>
+
+<label for="apellido_nombres_modificar" class="form-label">APELLIDOS / NOMBRES</label>
+<div class="input-group mb-3">
+<input required type="text" id="apellido_nombres_modificar" name="apellido_nombres_modificar" class="form-control form-control-sm" placeholder="Escribir apellidos / nombres" minlength="1" maxlength="50"/>
+<div class="invalid-tooltip"></div>
+</div>
+
+<label for="id_ccosto_modificar" class="form-label">OFICINA</label>
+<div class="input-group mb-3">
+<select required id="id_ccosto_modificar" name="id_ccosto_modificar" class="form-select form-select-sm"><option selected disabled value="">Seleccionar una oficina</option></select>
+<input required type="hidden" id="id_ccosto_anterior" name="id_ccosto_anterior"/>
+</div>
+
+<label for="id_funcion_modificar" class="form-label">FUNCION</label>
+<div class="input-group mb-3">
+<select required id="id_funcion_modificar" name="id_funcion_modificar" class="form-select form-select-sm"><option selected disabled value="">Seleccionar una función</option></select>
+<input required type="hidden" id="id_funcion_anterior" name="id_funcion_anterior"/>
+</div>
+
+</div>
+
+<div class="modal-footer justify-content-center bg-light">
+<button type="button" class="btn btn-lg btn-danger" data-bs-dismiss="modal" title="Cancelar"><i class="bi bi-x"></i></button>
+<button type="submit" class="btn btn-lg btn-success" title="Aceptar"><i class="bi bi-check"></i></button>
+</div>
+
+</div>
+</div>
+</div>
+</form>
+
+<script type="text/javascript" src="menu/empleados/listado_empleado_modificar.js"></script>
